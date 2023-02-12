@@ -5,52 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Winnie's Bootstrap Portfolio</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-
-
 </head>
 
-
 <header>
-    <!-- Intro settings -->
-    <style>
-        /* Default height for small devices */
-        #intro-example {
-            height: 400px;
-        }
-
-        /* Height for devices larger than 992px */
-        @media (min-width: 992px) {
-            #intro-example {
-                height: 600px;
-            }
-        }
-    </style>
-
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -73,23 +38,31 @@
     </nav>
 
     <!-- Background image -->
-    <div id="intro-example" class="p-5  bg-image " style="background-image: url(./images/background.jpg);">
-        <div class="mask overlay" style="background-color: rgba(0, 0, 0, 0.7);"> 
-        <div class="jumbotron">
-            <h1 class="display-4">Winnie NG</h1>
-            <p class="lead">Experienced in Information Services industry, particularly in the Asian market, together
-                with
-                the recently acquired
-                front end web development technical skills and international experiences makes your perfect
-                candidate.</p>
-            <hr class="my-4">
-            <p>Recently relocated from Hong Kong, hoping to explore the vibrant London city, historical United
-                Kingdom and getting to know myself better! </p>
-            <p> - Existence precedes essence </p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </div>
+    <div id="intro-example" class="p-5  bg-image " style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url(./images/background.jpg);">
+        <!-- <div class="mask overlay" style="background-color: rgba(0, 0, 0, 0.7);"> -->
+            <!-- <div class="jumbotron jumbotron-fluid" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url("./images/background.jpg");> -->
+                <div class="container" >
+                    <h1 class="display-4">Winnie NG</h1>
+                  <p>Experienced in Information Services industry, particularly in the Asian market, together
+                    with the recently acquired front end web development technical skills and international experiences makes your perfect candidate.</p>
+                </div>
+            </div>
+            
+            <!-- <div class="jumbotron">
+                <h1 class="display-4">Winnie NG</h1>
+                <p class="lead">Experienced in Information Services industry, particularly in the Asian market, together
+                    with
+                    the recently acquired
+                    front end web development technical skills and international experiences makes your perfect
+                    candidate.</p>
+                <hr class="my-4">
+                <p>Recently relocated from Hong Kong, hoping to explore the vibrant London city, historical United
+                    Kingdom and getting to know myself better! </p>
+                <p> - Existence precedes essence </p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </div> -->
 
-    </div>
+        </div>
     </div>
     <!-- Background image -->
 
@@ -130,7 +103,8 @@
         <img src="./images/analysis.jpg" class="card-img-top" alt="analysis">
         <div class="card-body">
             <h5 class="card-title">Analysis</h5>
-            <p class="card-text">Exposure to all kinds of analysis daily, aim to deliver the latest insights to your inbox</p>
+            <p class="card-text">Exposure to all kinds of analysis daily, aim to deliver the latest insights to your
+                inbox</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
     </div>
@@ -146,22 +120,19 @@
     <!-- Footer Section -->
     <footer class="text-muted">
         <div class="container">
-            <p class="float-right">
-                <a href="#">Back to top</a>
+            <p class="float-right"> <a href="#">Back to top</a> </p>
+            <p>&copy; 2017-2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         </div>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
