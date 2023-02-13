@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Winnie's Bootstrap Portfolio</title>
 
     <!-- Bootstrap CSS -->
@@ -13,117 +13,127 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<header>
+<body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- fixed top navbar, dark color theme, always expand in medium size -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: darkslateblue;">
+        <a class="navbar-brand" href="#">Winnie's Portfolio</a>
+        <!-- toggler botton on the right if following navbar brand line-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
-            <ul class="nav">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Me</a>
-                    </li>
-                </ul>
+
+        <!-- hiding and grouping nav bar items -->
+        <div class="collapse navbar-collapse " id="navbarCollapse">
+            <!-- ml auto align items to the right in bootstrap 4 -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:ngwingyan@gmail.com">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
-
-    <!-- Background image -->
-    <div id="intro-example" class="p-5  bg-image " style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url(./images/background.jpg);">
-        <!-- <div class="mask overlay" style="background-color: rgba(0, 0, 0, 0.7);"> -->
-            <!-- <div class="jumbotron jumbotron-fluid" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url("./images/background.jpg");> -->
-                <div class="container" >
-                    <h1 class="display-4">Winnie NG</h1>
-                  <p>Experienced in Information Services industry, particularly in the Asian market, together
-                    with the recently acquired front end web development technical skills and international experiences makes your perfect candidate.</p>
-                </div>
-            </div>
+    <main role="main">
+        <!-- jumbotron section -->
+        <div class="jumbotron text-white" style="background-image: url(./images/eye.jpeg)">
             
-            <!-- <div class="jumbotron">
-                <h1 class="display-4">Winnie NG</h1>
+            <!-- <div
+    class="mask"
+    style="
+      background: linear-gradient(
+        45deg,
+        hsla(168, 85%, 52%, 0.7),
+        hsla(263, 88%, 45%, 0.7) 100%
+      );
+    "
+  ></div> -->
+            
+            
+            <div class="container mask overlay" style="
+            background-color: hsla(0, 0%, 0%, 0.8);">
+                <h1 class="display-3">Winnie NG <img src="./images/avatar.png" alt="avatar" width="120" height="100">
+                </h1>
                 <p class="lead">Experienced in Information Services industry, particularly in the Asian market, together
-                    with
-                    the recently acquired
-                    front end web development technical skills and international experiences makes your perfect
-                    candidate.</p>
+                    with the recently acquired front end web development technical skills and international experiences
+                    makes your perfect candidate.</p>
+                <!-- horizontal line with margin top and bottom 4x -->
                 <hr class="my-4">
-                <p>Recently relocated from Hong Kong, hoping to explore the vibrant London city, historical United
+                <p class="text-right">Recently relocated from Hong Kong, hoping to explore the vibrant London city,
+                    historical United
                     Kingdom and getting to know myself better! </p>
-                <p> - Existence precedes essence </p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </div> -->
-
+                <p class="text-right"> - Existence precedes essence </p>
+                <p class="text-right"><a class="btn btn-primary btn-lg" href="#" role="button" style="background-color: darkslateblue;">Learn more &raquo;</a>
+                </p>
+            </div>
         </div>
-    </div>
-    <!-- Background image -->
-
-</header>
-
-<body>
-
-    <!-- Work Section -->
-    <div class="card" style="width: 18rem;">
-        <img src="./images/research.jpg" class="card-img-top" alt="Research">
-        <div class="card-body">
-            <h5 class="card-title">Research</h5>
-            <p class="card-text">10+ years in Information Services Industry across Asia Pacific and EMEA region</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <!-- Work Section -->
+        <!-- <div class="card" style="width: 18rem;">
+            <img src="./images/research.jpg" class="card-img-top" alt="Research">
+            <div class="card-body">
+                <h5 class="card-title">Research</h5>
+                <p class="card-text">10+ years in Information Services Industry across Asia Pacific and EMEA region</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
         </div>
-    </div>
 
-    <div class="card" style="width: 18rem;">
-        <img src="./images/teamwork.jpg" class="card-img-top" alt="Teamwork">
-        <div class="card-body">
-            <h5 class="card-title">Team work</h5>
-            <p class="card-text">Leadership experience while also working well as team member.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="card" style="width: 18rem;">
+            <img src="./images/teamwork.jpg" class="card-img-top" alt="Teamwork">
+            <div class="card-body">
+                <h5 class="card-title">Team work</h5>
+                <p class="card-text">Leadership experience while also working well as team member.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
         </div>
-    </div>
 
-    <div class="card" style="width: 18rem;">
-        <img src="./images/developer.jpg" class="card-img-top" alt="developer">
-        <div class="card-body">
-            <h5 class="card-title">Web Development</h5>
-            <p class="card-text">Learning in progress - in continuation of high school dream - another path of life?</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-
-
-    <div class="card" style="width: 18rem;">
-        <img src="./images/analysis.jpg" class="card-img-top" alt="analysis">
-        <div class="card-body">
-            <h5 class="card-title">Analysis</h5>
-            <p class="card-text">Exposure to all kinds of analysis daily, aim to deliver the latest insights to your
-                inbox</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <!-- Skills Section -->
+        <div class="card" style="width: 18rem;">
+            <img src="./images/developer.jpg" class="card-img-top" alt="developer">
+            <div class="card-body">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">Learning in progress - in continuation of high school dream - another path of life?
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div> -->
 
 
-
-    <!-- About Me Section -->
+        <!-- <div class="card" style="width: 18rem;">
+            <img src="./images/analysis.jpg" class="card-img-top" alt="analysis">
+            <div class="card-body">
+                <h5 class="card-title">Analysis</h5>
+                <p class="card-text">Exposure to all kinds of analysis daily, aim to deliver the latest insights to your
+                    inbox</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div> -->
+        <!-- Skills Section -->
 
 
 
+        <!-- About Me Section -->
 
+
+
+    </main>
     <!-- Footer Section -->
-    <footer class="text-muted">
+    <!-- <footer class="text-muted">
         <div class="container">
             <p class="float-right"> <a href="#">Back to top</a> </p>
             <p>&copy; 2017-2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         </div>
-    </footer>
+    </footer> -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
