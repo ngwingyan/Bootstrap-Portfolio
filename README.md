@@ -1,7 +1,7 @@
 # Bootstrap-Portfolio
 
 ## Purpose
-- to create a portfolio page using Bootstrap and advanced CSS linking projects for future professional use
+- To create a portfolio page using Bootstrap and advanced CSS linking projects for future professional use
 
 ## Feature and screenshot
 - Navbar and jumbotron image
