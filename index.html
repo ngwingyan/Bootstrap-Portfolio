@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Winnie's Bootstrap Portfolio</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS source -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
 </head>
 
 <body>
@@ -32,7 +34,7 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Work</a>
+                    <a class="nav-link" href="#">My Work</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Skills</a>
@@ -46,95 +48,138 @@
             </ul>
         </div>
     </nav>
-    <main role="main">
-        <!-- jumbotron section -->
-        <div class="jumbotron text-white" style="background-image: url(./images/eye.jpeg)">
-            
-            <!-- <div
-    class="mask"
-    style="
-      background: linear-gradient(
-        45deg,
-        hsla(168, 85%, 52%, 0.7),
-        hsla(263, 88%, 45%, 0.7) 100%
-      );
-    "
-  ></div> -->
-            
-            
-            <div class="container mask overlay" style="
-            background-color: hsla(0, 0%, 0%, 0.8);">
-                <h1 class="display-3">Winnie NG <img src="./images/avatar.png" alt="avatar" width="120" height="100">
-                </h1>
-                <p class="lead">Experienced in Information Services industry, particularly in the Asian market, together
-                    with the recently acquired front end web development technical skills and international experiences
-                    makes your perfect candidate.</p>
-                <!-- horizontal line with margin top and bottom 4x -->
-                <hr class="my-4">
-                <p class="text-right">Recently relocated from Hong Kong, hoping to explore the vibrant London city,
-                    historical United
-                    Kingdom and getting to know myself better! </p>
-                <p class="text-right"> - Existence precedes essence </p>
-                <p class="text-right"><a class="btn btn-primary btn-lg" href="#" role="button" style="background-color: darkslateblue;">Learn more &raquo;</a>
-                </p>
+
+    <!-- jumbotron section -->
+    <div class="jumbotron text-dark" style="background-image: url(./images/eye.jpeg)" ID="jumbotron">
+        <div class="container mask" style="background-color: hsla(0, 0%, 98%, 0.6)">
+            <h1 class="display-3"><strong>Winnie NG</strong> <img src="./images/avatar.png" alt="avatar" width="120"
+                    height="100"></h1>
+            <p class="lead"><strong>Experienced in Information Services industry, particularly in the Asian market,
+                    together with the recently acquired front end web development technical skills and international
+                    experiences makes your perfect candidate.</strong></p>
+            <!-- horizontal line with margin top and bottom 4x -->
+            <hr class="my-4">
+            <p class="text-right"><a class="btn btn-primary btn-lg" href="#" role="button"
+                    style="background-color: darkslateblue;">Learn more &raquo;</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Work section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-4">
+                <h1 class="display-4"><strong>My Work</strong></h1>
+            </div>
+            <!-- card 1 -->
+            <div class="card col-4" style="width: 18rem;">
+                <img src="./images/analysis.jpg" class="card-img-top" alt="consolefinance">
+                <div class="card-body">
+                    <h5 class="card-title">Console Finance</h5>
+                    <p class="card-text">Analyzing the financial records of a company with Javascript.</p>
+                    <a href="https://ngwingyan.github.io/Console-Finances/" target=_blank class="btn btn-primary">Link</a>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="card col-4" style="width: 18rem;">
+                <img src="./images/analysis.jpg" class="card-img-top" alt="codinggame">
+                <div class="card-body">
+                    <h5 class="card-title">Coding Game</h5>
+                    <p class="card-text">Quiz testing your javascript knowledge, written using javascript, DOM element and local storage with highscores saved</p>
+                    <a href="https://ngwingyan.github.io/CodingGame/" target=_blank class="btn btn-primary">Link</a>
+                </div>
+            </div>
+            <div class="col-4"></div>
+            <!-- card 3 -->
+            <div class="card col-4" style="width: 18rem;">
+                <img src="./images/analysis.jpg" class="card-img-top" alt="scheduler">
+                <div class="card-body">
+                    <h5 class="card-title">Daily Planner App</h5>
+                    <p class="card-text">Using DOM manipulation, advanced JavaScript, integration of third-party APIs</p>
+                    <a href="https://ngwingyan.github.io/WorkDayScheduler/" target=_blank class="btn btn-primary">Link</a>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="card col-4" style="width: 18rem;">
+                <img src="./images/analysis.jpg" class="card-img-top" alt="weather">
+                <div class="card-body">
+                    <h5 class="card-title">Weather Dashboard</h5>
+                    <p class="card-text">A weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.</p>
+                    <a href="https://ngwingyan.github.io/WeatherForecast/" target=_blank class="btn btn-primary">Link</a>
+                </div>
             </div>
         </div>
-        <!-- Work Section -->
-        <!-- <div class="card" style="width: 18rem;">
-            <img src="./images/research.jpg" class="card-img-top" alt="Research">
-            <div class="card-body">
-                <h5 class="card-title">Research</h5>
-                <p class="card-text">10+ years in Information Services Industry across Asia Pacific and EMEA region</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+
+
+
+    <!-- Skills Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-4">
+                <h1 class="display-4"><strong>Skills</strong></h1>
+            </div>
+            <div class="col-4">
+                <ul class="list-unstyled list-inline">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="list-unstyled list-inline">
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>API</li>
+                    <li>Git and more to come...</li>
+                </ul>
             </div>
         </div>
+    </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="./images/teamwork.jpg" class="card-img-top" alt="Teamwork">
-            <div class="card-body">
-                <h5 class="card-title">Team work</h5>
-                <p class="card-text">Leadership experience while also working well as team member.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- About Me Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-4">
+                <h1 class="display-4"><strong>About Me</strong></h1>
+            </div>
+            <div class="col-8">
+                <p>Recently relocated from Hong Kong, hoping to explore the vibrant London city,
+                    historical United Kingdom and getting to know myself better! </p>
+                <p class="float-right"> - Existence precedes essence </p>
+
             </div>
         </div>
+    </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="./images/developer.jpg" class="card-img-top" alt="developer">
-            <div class="card-body">
-                <h5 class="card-title">Web Development</h5>
-                <p class="card-text">Learning in progress - in continuation of high school dream - another path of life?
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- Contact Me Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-4">
+                <h1 class="display-4"><strong>Contact Me</strong></h1>
             </div>
-        </div> -->
-
-
-        <!-- <div class="card" style="width: 18rem;">
-            <img src="./images/analysis.jpg" class="card-img-top" alt="analysis">
-            <div class="card-body">
-                <h5 class="card-title">Analysis</h5>
-                <p class="card-text">Exposure to all kinds of analysis daily, aim to deliver the latest insights to your
-                    inbox</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col-8 align-self-center">
+                <a href="https://www.linkedin.com/in/winnie-ng-uk" target=_blank> <i class="fa fa-linkedin-square fa-2x"
+                        aria-hidden="true"></i>
+                    <a href="https://www.twitter.com" target=_blank> <i class="fa fa-twitter-square fa-2x"
+                            aria-hidden="true"></i>
+                        <a href="https://www.facebook.com" target=_blank><i class="fa fa-facebook-official fa-2x"
+                                aria-hidden="true"></i>
+                            <a href="mailto:ngwingyan@gmail.com" target=_blank><i class="fa fa-envelope fa-2x"
+                                    aria-hidden="true"></i>
             </div>
-        </div> -->
-        <!-- Skills Section -->
+        </div>
+    </div>
 
-
-
-        <!-- About Me Section -->
-
-
-
-    </main>
     <!-- Footer Section -->
-    <!-- <footer class="text-muted">
+    <footer class="text-muted">
         <div class="container">
-            <p class="float-right"> <a href="#">Back to top</a> </p>
-            <p>&copy; 2017-2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            <hr class="my-4">
+            <p class="float-right"> <a href="#jumbotron">Back to top</a> </p>
+            <p>&copy; 2023 Made by <a href="https://github.com/ngwingyan"> Winnie Ng </a></p>
         </div>
-    </footer> -->
-
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
